@@ -1,0 +1,89 @@
+.app-style {
+  display: flex;
+  flex: 1 1 0%;
+  background-color: #07142b !important;
+}
+
+
+
+h2 {
+  text-transform: none;
+  font-size: 21px;
+}
+
+button {
+  margin-left: 0px;
+}
+
+body {
+  overflow-y: initial !important;
+}
+
+.link-movie {
+  color: white !important;
+  font-weight: 400;
+}
+
+.link-movie:hover {
+  border-color: white;
+}
+
+.content-wrapper-movies {
+  margin-top: 0px !important;
+  margin-bottom: 50px;
+}
+
+
+.error__img {
+  width: 30%;
+  animation: showOn 1s forwards;
+}
+
+.error__text {
+  animation: showUp 1s forwards;
+}
+
+.error__text {
+  color: white;
+  margin-top: 40px;
+}
+
+.error__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.error-text-wrapper {
+  text-align: center;
+}
+
+
+.content-wrapper-movies h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 45px;
+  max-width: 1000px;
+  margin-bottom: 40px;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.input-movies {
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  border-style: solid;
+  transition: all 300ms ease;
+}
+
+.img__text {
+  margin-bottom: 0px !important;
+  text-transform: none;
+}
