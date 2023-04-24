@@ -24,7 +24,6 @@ function MovieDetail() {
     }, 1000);
   }, []);
 
-
   return (
     <>
       <div className="overlay-detail"></div>

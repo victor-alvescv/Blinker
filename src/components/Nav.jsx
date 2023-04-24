@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Nav() {
-
   return (
     <div className="flex flex-col nav-wrapper">
       <header className="navbar-home">
@@ -23,7 +22,11 @@ function Nav() {
             <Link to="/movies" className="link-home link-find">
               Find your movie
             </Link>
-            <Link  to="https://my-portfolio-ochre-eight.vercel.app" className="btn-contact" href="">
+            <Link
+              to="https://my-portfolio-ochre-eight.vercel.app"
+              className="btn-contact"
+              href=""
+            >
               Contact
             </Link>
           </div>

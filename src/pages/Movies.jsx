@@ -3,6 +3,7 @@ import "../components/Movies.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Jelly } from "@uiball/loaders";
+import startImg from '../start__img.svg'
 
 function Movies({ search }) {
   const [movieName, setMovieName] = useState(search);
@@ -39,7 +40,7 @@ function Movies({ search }) {
     setLoading(true);
   }, [movieName]);
 
-  console.log()
+  console.log();
 
   return (
     <div id="app">
@@ -69,7 +70,11 @@ function Movies({ search }) {
               >
                 Find your Movie
               </a>
-              <Link to="https://my-portfolio-ochre-eight.vercel.app" className="btn-contact" href="">
+              <Link
+                to="https://my-portfolio-ochre-eight.vercel.app"
+                className="btn-contact"
+                href=""
+              >
                 Contact
               </Link>
             </div>
@@ -125,12 +130,12 @@ function Movies({ search }) {
         </div>
         <section className="search">
           <div className="movies">
-          {movieName === "" && (
+            {movieName === "" && (
               <div className="content-wrapper">
                 <div className="img__wrapper">
                   <img
                     className="initial__img"
-                    src="https://blinker-site.vercel.app/assets/start__img.svg"
+                    src={startImg}
                     alt=""
                   />
                 </div>

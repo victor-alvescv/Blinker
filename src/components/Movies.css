@@ -4,8 +4,6 @@
   background-color: #07142b !important;
 }
 
-
-
 h2 {
   text-transform: none;
   font-size: 21px;
@@ -33,7 +31,6 @@ body {
   margin-bottom: 50px;
 }
 
-
 .error__img {
   width: 30%;
   animation: showOn 1s forwards;
@@ -56,7 +53,6 @@ body {
 .error-text-wrapper {
   text-align: center;
 }
-
 
 .content-wrapper-movies h1 {
   font-weight: 300;

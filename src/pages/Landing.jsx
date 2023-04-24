@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import { useState } from "react";
 import { Ring } from "@uiball/loaders";
 
-function Landing({ landingSearch}) {
+function Landing({ landingSearch }) {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +22,6 @@ function Landing({ landingSearch}) {
     }
   }
 
-
   return (
     <>
       <Nav />
@@ -36,7 +35,7 @@ function Landing({ landingSearch}) {
             </div>
             <div style={{ width: "100%" }}>
               <div style={{ width: "100%" }}>
-                <h2 style={{color: 'black'}}>
+                <h2 style={{ color: "black" }}>
                   FIND YOUR DREAM CAR WITH{" "}
                   <span style={{ color: "rgb(96, 48, 177" }}>BLINKER</span>
                 </h2>
@@ -53,7 +52,13 @@ function Landing({ landingSearch}) {
                   />
                   {loading ? (
                     <button style={{ border: "none" }} className="loading">
-                      <Ring className="loading-icon" size={40} lineWeight={5} speed={2} color="white" />
+                      <Ring
+                        className="loading-icon"
+                        size={40}
+                        lineWeight={5}
+                        speed={2}
+                        color="white"
+                      />
                     </button>
                   ) : (
                     <button style={{ border: "none" }} onClick={loadingSearch}>
@@ -80,13 +85,13 @@ function Landing({ landingSearch}) {
           </div>
           <img className="award" src={awardsImg} alt="" />
           <ul>
-          <li>Blinker © 2023</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Services</li>
-          <li>Terms of Service</li>
-          <li>Privacy and Legal</li>
-        </ul>
+            <li>Blinker © 2023</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Terms of Service</li>
+            <li>Privacy and Legal</li>
+          </ul>
         </div>
       </section>
     </>
