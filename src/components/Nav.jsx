@@ -22,13 +22,9 @@ function Nav() {
             <Link to="/movies" className="link-home link-find">
               Find your movie
             </Link>
-            <Link
-              to="https://my-portfolio-ochre-eight.vercel.app"
-              className="btn-contact"
-              href=""
-            >
+            <span style={{cursor: 'not-allowed'}}>
               Contact
-            </Link>
+            </span>
           </div>
         </div>
       </header>

@@ -11,26 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ff328f;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #ff0073;
-}
-
 :root {
   --md-theme-default-primary: #6030b1;
   --md-theme-default-accent: #ff328f;
@@ -45,7 +25,6 @@ html {
 
 .nav-wrapper {
   display: flex;
-  flex: 1 1 0%;
 }
 
 .logo-detail{
@@ -184,6 +163,7 @@ img {
 .navbar-home .logo-home {
   height: 40px;
   width: 150px;
+  animation: showOn 1s forwards;
 }
 
 .navbar .links {
@@ -570,8 +550,12 @@ h3 {
     display: none !important;
   }
 
+  #filter {
+    display: none;
+  }
+
   .content-wrapper h1 {
-    font-size: 35px;
+    font-size: 35px !important;
   }
 
   .content-wrapper input {
@@ -598,7 +582,7 @@ h3 {
   }
 
   .content-wrapper h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   #filter {

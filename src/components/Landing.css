@@ -8,8 +8,6 @@
   max-width: 100vw;
   padding: 10px 20px 0 20px;
   overflow: hidden;
-  display: flex;
-  flex: 1;
 }
 
 ul {
@@ -165,7 +163,7 @@ button:hover {
 }
 
 .award {
-  bottom: 80px;
+  width: 50%;
   max-height: 40%;
   max-width: max-content;
   margin-top: 40px;
@@ -173,6 +171,7 @@ button:hover {
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -194,9 +193,16 @@ button:hover {
   }
 }
 
+
 @media screen and (max-height: 1200px) {
   .navbar-home {
     height: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .award {
+    width: 70%;
   }
 }
 
@@ -237,7 +243,7 @@ button:hover {
   }
 
   .award {
-    max-width: 100%;
+    width: 90%;
   }
 
   button {

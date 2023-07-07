@@ -84,14 +84,6 @@ function Landing({ landingSearch }) {
             </div>
           </div>
           <img className="award" src={awardsImg} alt="" />
-          <ul>
-            <li>Blinker © 2023</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
-            <li>Terms of Service</li>
-            <li>Privacy and Legal</li>
-          </ul>
         </div>
       </section>
     </>

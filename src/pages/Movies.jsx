@@ -3,7 +3,7 @@ import "../components/Movies.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Jelly } from "@uiball/loaders";
-import startImg from '../start__img.svg'
+import startImg from "../start__img.svg";
 
 function Movies({ search }) {
   const [movieName, setMovieName] = useState(search);
@@ -70,13 +70,7 @@ function Movies({ search }) {
               >
                 Find your Movie
               </a>
-              <Link
-                to="https://my-portfolio-ochre-eight.vercel.app"
-                className="btn-contact"
-                href=""
-              >
-                Contact
-              </Link>
+              <span style={{cursor: 'default'}} className="btn-contact">Contact</span>
             </div>
           </div>
           <div
@@ -133,11 +127,7 @@ function Movies({ search }) {
             {movieName === "" && (
               <div className="content-wrapper">
                 <div className="img__wrapper">
-                  <img
-                    className="initial__img"
-                    src={startImg}
-                    alt=""
-                  />
+                  <img className="initial__img" src={startImg} alt="" />
                 </div>
                 <h2 className="img__text">
                   Start your search inside{" "}
